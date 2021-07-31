@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //TO select parent via child
+        <h2>heading 1</h2>
+
+    <ul>
+        <li id="intro">list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul>
+
+    <script>
+        
+        let elm = document.getElementById("intro");
+        let prt = elm.parentElement; // parent select via child
+        prt.innerHTML = "hello"; //to change
+        console.log(prt);
+    </script> -->
+
+    <!-- To Select child via parent - first & last element child
+
+    <h2>heading 1</h2>
+
+    <ul id="intro">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul>
+
+    <script>
+        let elm = document.getElementById("intro");
+        //let node = elm.firstElementChild; //select first element child via parent
+        let node = elm.lastElementChild;  //select last element child via parent
+        node.innerHTML = "hello";
+        console.log(node);
+        
+    </script> -->
+
+    <!-- To seclect Siblings- previous & next element Siblings -->
+
+    <h2>heading 1</h2>
+
+    <ul>
+        <li>list 1</li>
+        <li id="intro">list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul>
+
+    <script>
+        let elm = document.getElementById("intro");
+        //let node = elm.previousElementSibling; //select previous  elementsibling
+        let node = elm.nextElementSibling;  //select next element sibling
+        node.innerHTML = "hello";
+        console.log(node);
+        
+    </script>
+</body>
+</html>

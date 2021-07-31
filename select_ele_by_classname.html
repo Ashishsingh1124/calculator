@@ -1,0 +1,32 @@
+<!-- To select more than 1 element, we use Class -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul\>
+        <li class="cl">list 1</li>
+        <li>list 2</li>
+        <li class="cl">list 3</li>
+    </ul>
+
+    <script>
+        let elm = document.getElementsByClassName("cl"); // to select & store in elm
+        //let elm = document.getElementsByClassName("cl one"); // to select from multiple class
+        //console.log(elm); //HTMLCollection
+        //console.log(elm.length); //2
+
+        for(let i=0; i<elm.length; i++){
+            //console.log(elm[i].innerHTML); //to get- not in techgun
+            elm[i].innerHTML = "<p> hello </p>";
+
+        }
+        
+    </script>
+</body>
+</html>

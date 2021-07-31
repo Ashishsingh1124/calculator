@@ -1,0 +1,30 @@
+<!-- To select 1 element we use id -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>list 1</li>
+        <li id="first">list 2</li> 
+        <!-- 1 element has unique id -->
+        <li>list 3</li>
+    </ul>
+
+    <script>
+        let elm = document.getElementById("first"); //to select & store in elm
+        //console.log(elm); 
+
+        //console.log(elm.innerHTML); // to get
+
+        elm.innerHTML = "<p> hello </p>"; //to set
+
+
+    </script>
+</body>
+</html>
